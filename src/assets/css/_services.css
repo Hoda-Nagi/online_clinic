@@ -1,0 +1,352 @@
+.services .carousel {
+  height: 600px;
+}
+.services .logo a{
+  text-decoration: none;
+  color: #fff;
+}
+.services .carousel-caption {
+  left: 12%;
+  text-align: left;
+}
+.services .carousel-caption h1 {
+  margin-bottom: 20px;
+}
+.services .carousel-caption h3 {
+  margin-bottom: 20px;
+  font-family: "Redressed", cursive;
+  font-size: 33px;
+}
+.services .carousel-caption h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #009dff;
+}
+.services .carousel-caption p {
+  width: 70%;
+  margin-top: 20px;
+  font-family: Merriweather;
+  font-size: 17px;
+  color: #ddd;
+}
+/* start show service */
+.services .show-services {
+  padding: 70px 0;
+}
+.services .show-services .row {
+  margin-bottom: 40px;
+}
+.services .show-services .fir-row .col-md-3:nth-child(2) {
+  animation-delay: calc(var(--animate-delay) * 2.5);
+}
+.services .show-services .fir-row .col-md-3:nth-child(4) {
+  animation-delay: calc(var(--animate-delay) * 3.5);
+}
+
+/* //start seconed */
+.services .show-services .sec-row .col-md-3:nth-child(2) {
+  animation-delay: calc(var(--animate-delay) * 4.5);
+}
+
+.services .show-services .sec-row .col-md-3:nth-child(4) {
+  animation-delay: calc(var(--animate-delay) * 5.5);
+}
+.services .show-services i {
+  margin-top: -42px;
+  margin-left: 30px;
+  font-size: 30px;
+  background: #009dff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  transition: color 300ms ease;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .services .show-services i{
+        font-size:20px;
+        width:43px;
+        height:43px;
+        line-height:43px;
+    }
+}
+.services .show-services i:hover {
+  color: #009dff;
+  background: #fff;
+  border: 2px solid #009dff;
+}
+.services .show-services img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 6px;
+}
+.services .show-services .text {
+  margin-top: 12px;
+  font-size: 18px;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+  font-family: Merriweather;
+  font-size: 18px;
+}
+.services .show-services h2 {
+  margin-bottom: 20px;
+  font-family: "Redressed", cursive;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .services .show-services h2{
+        font-size: 24px;
+    }
+}
+.services .show-services .paragraph {
+  font-size: 16px;
+  color: #827f7f;
+  font-family: Merriweather;
+}
+/* end show srvices */
+/* start process */
+.process {
+  padding: 80px 0;
+  background: url("../imgs/4.jpg");
+  background-size: cover;
+  height: 600px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.process .overlay {
+  position: absolute;
+  padding: 80px 0;
+  left: 0;
+  top: 0;
+  background: rgba(0, 157, 255, 0.7);
+  height: 600px;
+  width: 100%;
+  z-index: 2;
+}
+@media (max-width: 767.98px) {
+  .process,
+  .process .overlay {
+    height: 1100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .process,
+  .process .overlay {
+    height: 700px;
+  }
+}
+.process .row {
+  animation-delay: calc(var(--animate-delay) *7);
+}
+.process .col {
+  margin-bottom: 20px;
+}
+.process h3 {
+  margin-bottom: 20px;
+  font-family: "Redressed", cursive;
+  font-size: 33px;
+  color: #fff;
+  display: block;
+}
+.process h3:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #fff;
+}
+.process h1 {
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-family: "Redressed", cursive;
+  font-size: 60px;
+  color: #fff;
+  display: block;
+}
+.process i {
+  font-size: 30px;
+  background: #32749d;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  transition: color 300ms ease;
+  margin-bottom: 15px;
+}
+.process h2 {
+  font-family: "Redressed", cursiv;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.process p,
+.process h2 {
+  color: #fff;
+}
+.process p {
+  margin-bottom: 10px;
+  font-family: Merriweather;
+  font-size: 18px;
+}
+/* end process */
+/* start proffesional */
+.professional {
+padding: 70px 0;
+position: relative;
+}
+.professional h3 {
+  margin-bottom: 20px;
+  font-family: "Redressed", cursive;
+  font-size: 33px;
+  color: #222;
+  display: block;
+}
+.professional h3:after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 8px 0;
+  background-color: #009dff}
+ .professional img{
+  width: 300px;
+  height: 60%;
+  float: right;
+  position: absolute;
+  right: 43px;
+  top:25px;
+  border-radius: 50%;
+  box-shadow: rgb(0 0 0 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
+  border:1px solid #009dff;
+ }
+.professional h1 {
+  font-weight: bold;
+  font-family: "Redressed", cursive;
+  font-size: 60px;
+  color: #222;
+  display: block;
+}
+.professional h2 {
+  font-family: "Redressed", cursiv;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.professional p {
+  margin-bottom: 10px;
+  font-family: Merriweather;
+  font-size: 18px;
+  color: #827f7f;
+}
+.professional .number {
+  color: #009dff;
+  font-size: 37px;
+  font-weight: bold;
+  font-family: "Redressed", cursiv;
+  transition:0.3s ease-in-out;
+}
+
+/* end professional */
+.footer {
+  padding: 70px 0;
+  background-color: #222;
+  color: #fff;
+}
+.footer h3 {
+  margin-bottom: 20px;
+  font-family: "Redressed", cursive;
+  font-size: 33px;
+  color: #fff;
+  display: block;
+}
+.footer h3:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #009dff;
+}
+.footer h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Redressed", cursive;
+  font-size: 35px;
+  color: #fff;
+  display: block;
+}
+.footer .col {
+  margin-bottom: 40px;
+}
+.footer p {
+  color: #ddd;
+  font-family: Merriweather;
+  font-size: 17px;
+}
+.footer .emergency {
+  float: left;
+  margin-right: 30px;
+  margin-top: 25px;
+}
+.footer .emergency h4 {
+  font-family: "Redressed", cursive;
+  font-weight: 600;
+}
+.footer .emergency h4 i {
+  color: #009dff;
+  font-size: 20px;
+}
+.footer .emergency span {
+  font-family: Merriweather;
+  color: #ddd;
+}
+.footer .serv h3,
+.footer .activity h3 {
+  margin-bottom: 30px;
+}
+.footer .serv ul li {
+  font-family: Merriweather;
+  line-height: 1.8;
+  font-size: 17px;
+  color: #ddd;
+}
+.footer i {
+  color: #fff;
+  width: 30px;
+  font-size: 30px;
+}
+.footer .social i {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  background: #009dff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  color: #fff;
+  transition: color 300ms ease;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+.footer .social i:hover {
+ opacity:0.7
+}
+.footer .copyr p {
+  margin-top: 50px;
+  color: #ddd;
+}
+.footer .copyr span {
+  font-weight: bold;
+  color: #009dff;
+  text-transform: uppercase;
+}

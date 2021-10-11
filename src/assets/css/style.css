@@ -1,0 +1,363 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height:100%;
+  
+}
+
+/* start header */
+.header {
+  box-shadow: 0px 1px 10px rgb(29 34 47 / 10%);
+  padding: 16px 0;
+  border-bottom: 1px solid hsl(0deg 0% 57% / 57%);
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.header .logo i {
+  color: #fff;
+  font-size: 33px;
+  margin-right: 6px;
+}
+.header .logo {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Redressed", cursive;
+  color: #fff;
+}
+@media (max-width: 575.98px) {
+  .header .logo {
+    float: left;
+  }
+  .header .menue {
+    margin-right: 30px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header .logo {
+    float: left;
+  }
+  .carousel-caption {
+    z-index: unset;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header .logo {
+    font-size: 20px;
+  }
+}
+.header .time,
+.header .phone,
+.header .location {
+  font-size: 17px;
+  color: #ddd;
+  /* font-weight: bold;*/
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 6px auto;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header .time,
+  .header .phone,
+  .header .location {
+    font-size: 16px;
+  }
+}
+.header .phone span:not(first-of-type),
+.header .location span:not(first-of-type),
+.header .time span:not(first-of-type) {
+  display: block;
+}
+
+.header .phone i,
+.header .location i,
+.header .time i {
+  font-size: 40px;
+  color: #009dff;
+  position: absolute;
+  /*  float: left;*/
+  left: 10px;
+}
+.header .time i {
+  left: 32px;
+}
+.header .time span:nth-child(3) {
+  margin-right: 20px;
+}
+.header .phone span:nth-child(2) {
+  margin-right: 50px;
+}
+@media (max-width: 575.98px) {
+  .header .time span:nth-child(2) {
+    margin-left: 45px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header .time span:nth-child(2) {
+    margin-left: 45px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header .time span:nth-child(2) {
+    margin-left: 45px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header .phone i,
+  .header .location i,
+  .header .time i {
+    font-size: 35px;
+    left: 0;
+  }
+  .header .time i {
+    left: 17px;
+  }
+}
+
+/* start menue */
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle,
+.btn-secondary.focus,
+.btn-secondary:focus,
+.btn-secondary {
+  font-size: 30px;
+  line-height: 37px;
+  cursor: pointer;
+  border: 1px solid #009dff;
+  width: 50px;
+  height: 50px;
+  color: #009dff;
+  text-align: center;
+  background-color: transparent;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header .menue {
+    position: absolute;
+    right: 80px;
+    top: 10px;
+  }
+}
+.menue .dropdown-toggle::after {
+  display: none;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  background: unset;
+  box-shadow: unset;
+  z-index: 11;
+}
+.header .dropdown-menu {
+  min-width: 18rem;
+  background: #1d1f27;
+  padding: 20px 15px;
+  border: 1px solid #009dff;
+  z-index: 11;
+  left: -230px;
+}
+.header .dropdown-menu .dropdown-divider {
+  border-top: 1px solid hsl(0deg 0% 57% / 57%);
+}
+.header .dropdown-menu i {
+  font-size: 30px;
+  left: unset;
+}
+.header .dropdown-menu .time span:nth-child(3) {
+  margin-left: 45px;
+}
+.header .dropdown-menu .location-div {
+  margin-left: 40px;
+}
+.header .dropdown-menu .phone-div {
+  margin-left: 25px;
+}
+.header .dropdown-menu .phone i {
+  left: 3px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header .phone {
+    margin: unset;
+  }
+}
+/* end menue */
+/* end header */
+/* start carousl */
+.carousel {
+  height: 100%;
+}
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img,
+.w-100 {
+  width: 100%;
+  height: 100%;
+  /* opacity: 0.6; */
+}
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+.carousel-inner > .item > .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #111;
+}
+.carousel-caption {
+  bottom: 50px;
+  z-index: 1;
+}
+@media (max-width: 575.98px) { 
+  .carousel-caption {
+    bottom: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .carousel-caption {
+    bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .carousel-caption {
+    /* bottom: 20px; */
+  }
+}
+
+.carousel-caption h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Redressed", cursive;
+  font-size: 60px;
+}
+@media (max-width: 575.98px) {
+  .carousel-caption h1 {
+    font-size: 31px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .carousel-caption h1 {
+    font-size: 40px;
+  }
+}
+
+.carousel-caption h1 span {
+  color: #009dff;
+  /* font-size: 60px; */
+}
+.carousel-caption p {
+  font-size: 15px;
+  color: #ddd;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.carousel-caption button {
+  font-size: 16px;
+  padding: 3px 20px;
+  font-family: "Redressed", cursive;
+  font-size: 30px;
+}
+/* end carousle */
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 11; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: "Redressed", cursive;
+  transition: all 0.3s ease-in-out;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover:not(:first-child),
+.offcanvas a:focus:not(first-of-type) {
+  color: #f1f1f1;
+  /* background-color: #009dff; */
+  background-image: linear-gradient(to bottom, #009dff, Black);
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/* start add patient page */
+.add {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Redressed", cursive;
+  margin: 40px 0;
+}
+.add:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto;
+  background-color: #009dff;
+}
+.header .header-link {
+  text-decoration: none;
+  color: #333;
+}
+.header .header-link:hover {
+  text-decoration: none;
+}
+.main label {
+  font-family: "Redressed", cursive;
+  color: #888;
+  font-size: 21px;
+}
+.main button {
+  font-family: "Redressed", cursive;
+  font-size: 25px;
+}
+.main img {
+  width: 60px;
+  border: 2px solid #009dff;
+}
